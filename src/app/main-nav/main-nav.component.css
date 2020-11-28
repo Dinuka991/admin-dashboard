@@ -1,0 +1,129 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 300px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 4fr 4fr;
+  grid-template-areas: 
+            "box1 box1 box1 box1" 
+            "box2 box3 box3 box3"
+            "box4 box4 box5 box5";
+            color: #f2f4f8;
+            color: #2d89ef;  
+   grid-gap: 0.8rem;
+   margin: 15px 15px;   
+   text-align: center;
+   justify-items: stretch;      
+
+}
+.box1{
+ grid-area: box1;
+ justify-content: center;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border: 1px solid var(--border);
+ border-radius: 1% !important;
+  
+  
+}
+.box2{
+  
+  grid-area: box2;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border: 1px solid var(--border);
+ border-radius: 1% !important;
+  
+}
+.box3{
+  grid-area: box3;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border: 1px solid var(--border);
+ border-radius: 1% !important;
+ 
+}
+.box4{
+  grid-area: box4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border: 1px solid var(--border);
+ border-radius: 1% !important;
+  
+ 
+}
+.box5{
+  grid-area: box5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border: 1px solid var(--border);
+ border-radius: 1% !important;
+  
+  
+}
+
+@media only screen and(max-width:500px){
+  main{
+     
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 2fr 2fr 1.5fr 1.5fr;
+      grid-template-areas: 
+                "box1" 
+                "box2" 
+                "box3"
+                "box4" 
+                "box5";
+       grid-gap: 0.5rem;
+       margin: 15px 15px;         
+  
+  }
+
+}
+
+@media only mediatype and (max-width:400px) {
+ 
+
+}
+@media screen and (max-width: 640px) {
+  main{
+     
+      height: 90vh;
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 2fr 2fr 1.5fr 1.5fr;
+      grid-template-areas: 
+                "box1" 
+                "box2" 
+                "box3"
+                "box4" 
+                "box5";
+       grid-gap: 0.5rem;
+       margin: 15px 15px;         
+  
+  }
+}
+
+
+.example-header-image {
+  background-size: cover;
+}
+mat-nav-list , mat-toolbar{
+  background:  #f2f4f8;
+
+}
+html, body { height: 100%; }
+body { margin: 0; background: #f2f4f8; font-family: Roboto, "Helvetica Neue", sans-serif; }
